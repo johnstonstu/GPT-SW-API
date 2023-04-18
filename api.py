@@ -13,3 +13,23 @@ class StarWarsAPI:
             return data["results"], data["next"]
         else:
             return [], None
+
+    def get_planets(self, page=1):
+        url = f"{self.base_url}planets/?page={page}"
+        response = requests.get(url)
+
+        if response.status_code == 200:
+            data = response.json()
+            return data["results"], data["next"]
+        else:
+            return [], None
+
+    def get_starships(self, page=1):
+        url = f"{self.base_url}starships/?page={page}"
+        response = requests.get(url)
+
+        if response.status_code == 200:
+            data = response.json()
+            return data["results"], data["next"]
+        else:
+            return [], None

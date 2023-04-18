@@ -1,24 +1,29 @@
 # Star Wars API App
 
-This is a simple Python program that uses the Star Wars API (https://swapi.dev/api/) to display a list of movie titles in a GUI. The program uses the `requests` and `tkinter` modules to make HTTP requests to the API and create the GUI, respectively.
+This is a Python application that accesses the [Star Wars API](https://swapi.dev/) and allows the user to view and search for information about movies, planets, and starships in the Star Wars universe.
 
-## Requirements
+## Installation
 
-To run this program, you will need:
-
-- Python 3.x
-- The `requests` module (install with `pip install requests`)
-- The `tkinter` module (included with most Python installations)
+1. Clone the repository to your local machine.
+2. Install the required packages by running the following command in your terminal: `pip install -r requirements.txt`.
 
 ## Usage
 
-To run the program, simply execute the `main.py` file with Python:
+1. Run the `main.py` file to launch the application.
+2. Use the buttons on the GUI to load more data, search for movies, or view details about a selected item.
+3. To exit the application, click the "Quit" button or close the window.
 
-    python main.py
+## Files
 
+The following files are included in this repository:
 
-This will launch the GUI and display the first page of movie titles. Click the "Load More Movies" button to load additional pages of movies.
+- `api.py`: Defines the `StarWarsAPI` class, which is used to access data from the Star Wars API.
+- `details.py`: Defines the `Details` class, which is used to display detailed information about a selected item in the GUI.
+- `fileio.py`: Defines functions for reading and writing data to a local file.
+- `gui.py`: Defines the `StarWarsAPIApp` class, which is used to create the GUI and handle user interactions.
+- `main.py`: The main file that launches the application.
+- `search.py`: Defines the `MovieSearch` class, which is used to search for movies based on a query string.
 
-## License
+## Credits
 
-This program is released under the MIT License. See the `LICENSE` file for details.
+This application was created by [your name] and is based on the [Star Wars API](https://swapi.dev/).
